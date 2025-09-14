@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Bell, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SearchModal from "./SearchModal";
+import pawpalLogo from "/pawpal-logo.png";
 
 interface PawPalHeaderProps {
   title: string;
@@ -23,7 +24,7 @@ const PawPalHeader = ({ title, showSearch = false, onSearch }: PawPalHeaderProps
           {/* Logo - Fixed size */}
           <div className="w-12 h-12 rounded-lg flex items-center justify-center shadow-glow overflow-hidden flex-shrink-0">
             <img
-              src="/pawpal-logo.png"
+              src={pawpalLogo}
               alt="PawPal Logo"
               className="w-full h-full object-cover"
             />
