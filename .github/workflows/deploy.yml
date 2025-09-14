@@ -33,6 +33,7 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
+          VITE_BASE_PATH: /PawPal/
 
       - name: Verify build output
         run: |
@@ -62,6 +63,17 @@ jobs:
         with:
           name: production-files
           path: ./dist
+
+      - name: Verify deployment files
+        run: |
+          echo "Deployment directory contents:"
+          ls -la dist/
+          echo "Assets directory contents:"
+          ls -la dist/assets/
+          echo "Index.html content:"
+          head -20 dist/index.html
+          echo "File permissions:"
+          ls -la dist/assets/*
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
