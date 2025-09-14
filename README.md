@@ -2,6 +2,12 @@
 
 A modern social platform for pet owners to connect, share experiences, and discover local pet-related services.
 
+## Our Goal 
+
+`"Build the world’s leading pet ecosystem that unites social networking, healthcare, services, and commerce — making pet parenting seamless and future-ready."
+`
+
+
 ## 🌟 Features
 
 ### 📱 Core Functionality
